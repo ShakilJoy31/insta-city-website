@@ -134,7 +134,6 @@ const createPost = (post) => {
 const showPosts = (posts) => {
     const productsContainer = document.getElementById( "posts" );
     productsContainer.innerHTML = "";
-
     posts.forEach((post) => {
         const div = createPost(post);
         productsContainer.appendChild(div);
@@ -142,7 +141,6 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
-  console.log('liked post is called');
     document.getElementById( "liked" ).innerText = ''; 
     const likedPosts = getLikedPosts();
     console.log(likedPosts); 
